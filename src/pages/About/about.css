@@ -1,0 +1,109 @@
+
+.AboutMainContainer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Rubik',sans-serif;
+    font-size: 32px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AboutContainer{
+    width: 60vw;
+    height: auto;
+    margin-top: 230px;
+}
+
+.Text{
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.Text.Black{
+    color: black;
+}
+.Text.White{
+    color: white;
+}
+
+.AdvantagesContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 200px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.Advantage{
+    height: 100px;
+    width: auto;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.AdvantageButton{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.AboutSpacingContainer{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: rgba(42, 42, 42, 1);
+    margin-top: 40px;
+}
+
+
+
+@media (max-width:464px) and (min-width:0px){
+    .AboutMainContainer{
+        font-size: 20px;
+    }
+    .Text{
+        font-size: 20px;
+    }
+    .AdvantagesContainer{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width:465px) and (max-width:1080px){
+
+    .AboutMainContainer{
+        font-size: 20px;
+    }
+    .Text{
+        font-size: 20px;
+    }
+    .AdvantagesContainer{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}

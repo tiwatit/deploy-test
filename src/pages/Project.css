@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.ProjectMainContainer{
+    width: 100vw;
+    height: auto;
+}
+
+.ProjectTop{
+    width: 100vw;
+    height: 100vh;
+}
+
+.PortfolioContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-top: -7px;
+    color: black;
+    font-size: 45px;
+    
+}
+
+.PortfolioImage{
+    width: 60%;
+    margin-top: 15px;
+}
+
+.PortfolioImage.container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+@media (max-width:464px) and (min-width:0px){
+    .PortfolioContainer{
+      font-size: 20px;
+    }
+    .ProjectTop{
+        width: 100vw;
+        height: 30vh;
+    }
+}
+
+@media (min-width:465px) and (max-width:1080px){
+    .PortfolioContainer{
+        font-size: 40px;
+      }
+      .ProjectTop{
+          width: 100vw;
+          height: 50vh;
+      }
+}

@@ -1,0 +1,615 @@
+
+.MainContainer{
+  width: auto;
+  height: auto;
+  background-color: #000000;
+  position: relative;
+  
+}
+
+.MainPageContainer{
+  width: 100dvw;
+  height: 100dvh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.VideoTopWrapper{
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  font-size: 25px;
+}
+
+.AboutLinkContainer{
+  width: 240px;
+  height: 70px;
+  background: none;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Logo{
+  width: 258px;
+  height: 173px;
+  position: fixed;
+  cursor: pointer;
+  top: 50px;
+  left: 10px;
+  z-index: 3;
+}
+
+
+.Logotest{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  z-index: 3;
+}
+
+
+.Menu{
+  display: flex;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  font-size: 32px;
+  font-weight: 300;
+  width: 150px;
+  justify-content: space-between;
+  z-index: 6;
+}
+
+.MenuButton
+{
+  height: 55px;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MenuRectangle{
+  background-color: white;
+  width: 50px;
+  height: 2px;
+  transition: rotate 0.3s ease-in;
+}
+
+.Menu:hover{
+  border-bottom: 1px solid white;
+}
+
+.Menu1{
+  display: flex;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  font-size: 32px;
+  font-weight: 300;
+  width: 150px;
+  justify-content: space-between;
+  z-index: 6;
+}
+
+.Menu1:hover{
+  border-bottom: 1px solid black;
+}
+
+.HeadNaming{
+  font-size: 50px;
+  position: absolute;
+  top: 45%;
+  left: 200px;
+  height: auto;
+  z-index: 3;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.HeadNamingAnimated{
+  font-size: 50px;
+  position: absolute;
+  top: 45%;
+  left: 200px;
+  height: auto;
+  z-index: 3;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  animation: appear 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+    margin-top: 30px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.Resources{
+  position: fixed;
+  bottom: 50px;
+  left: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 350px;
+  width: 50px;
+  z-index: 7;
+}
+
+.ResourcesContainer{
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: background 0.3s ease-in;
+}
+
+.ResourcesItem{
+  width: 50px;
+  height: 50px;
+}
+
+.ArrowsContainer{
+  position: fixed;
+  height: 200px;
+  top: 45%;
+  right: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: visible;
+  z-index: 5;
+}
+.arrow-right,
+.arrow-left{
+  width: 40px;
+  height: 40px;
+}
+
+
+.Locale{
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  width: 100px;
+  height: 20px;
+  display: flex;
+
+}
+
+
+.MenuClose{
+  display: flex;
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  font-size: 32px;
+  font-weight: 300;
+  width: 60px;
+  height: 60px;
+  justify-content: space-between;
+
+}
+
+.ActualMenu{
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  font-size: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  top: -100%;
+  left: 0%;
+  background: #4B4F53;
+  transition: 0.5s;
+}
+
+.ActualMenu.active{
+  top: 0%;
+}
+
+.MenuImage{
+  position: absolute;
+  bottom: 0px;
+  width: 40%;
+  right: 0px;
+  z-index: 2;
+}
+
+.ulItem{
+  height: 20%;
+  cursor: pointer;
+  width: auto;
+}
+
+
+.ContactsMenu{
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  font-size: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -100%;
+  left: 0%;
+  background: #4B4F53;
+  transition: 0.5s;
+}
+
+.ContactsMenu.active{
+  top: 0%;
+}
+
+.ContactsContainer{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+
+.MainPartContainer{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.ImagesGrid{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: relative;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  column-gap: 0px;
+  row-gap: 0px;
+  z-index: 2;
+}
+
+.GridImageContainer{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.GridImage{
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.3;
+  transition: opacity 1s;
+}
+
+.GridImage:hover{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+.ImageWrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(88, 100, 54);
+}
+
+.MainImage{
+  width: 60vw;
+  height: auto;
+  scale: 1.1;
+}
+
+.LogoWrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoSecond{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  z-index: 3;
+}
+
+.MainPartContainer.responsive{
+  height: auto;
+  min-height: 100vh;
+ 
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.GridItemContainer{
+  width: 70%;
+  display: grid;
+  column-gap: 10%;
+  row-gap: 50px;
+  grid-template-columns: 40% 40%;
+}
+
+
+.GridItem{
+  width: 600px;
+  overflow:auto;
+  height: 425px;
+}
+
+.GridImagePortrolio{
+  width: 100%;
+  height: 85%;
+  border: 3px solid white;
+}
+
+.FooterContainer{
+  width: 100vw;
+  height: 30vh;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.carouselClass{
+  width: 1000px;
+}
+
+.MenuList{
+  width:100%;
+  height:45%;
+  margin-left:300px;
+  list-style:none;
+  z-index: 3;
+}
+
+.Writing{
+  margin-bottom: 30px;
+}
+
+@media (max-width:320px) and (min-width:0px){
+  .Resources{
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .Logo{
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+  }
+  .MenuWriting{
+    display: none;
+  }
+  .Menu1{
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    display:flex;
+    justify-content: flex-end;
+  }
+  .ResourcesItem{
+    width: 30px;
+    height: 30px;
+  }
+  .FooterContainer{
+    font-size: 30px;
+    height: 20vh;
+  }
+  .PortfolioContainer{
+    font-size: 20px;
+  }
+  .ArrowsContainer{
+    position: fixed;
+    right: 10px;
+    top: 44%;
+    z-index: 3;
+    display: none;
+  }
+  .Writing{
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+  .AboutLinkContainer{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+  }
+  .Menu:hover{
+    border-bottom: none;
+  }
+  .Menu1:hover{
+    border-bottom: none;
+  }
+}
+
+@media (max-width:460px) and (min-width:321px){
+  .Logo{
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+  }
+  .MenuWriting{
+    display: none;
+  }
+  .Menu1{
+    position: fixed;
+    top: 50px;
+    right: 110px;
+    display:flex;
+    justify-content: flex-end;
+  }
+  .Resources{
+    position: fixed;
+    bottom: 40px;
+    left: 0px;
+    width: 200px;
+    height: auto;
+    display: flex;
+  }
+  .ResourcesItem{
+    width: 30px;
+    height: 30px;
+  }
+  .FooterContainer{
+    font-size: 30px;
+    height: 20vh;
+  }
+  .PortfolioContainer{
+    font-size: 20px;
+  }
+  .ArrowsContainer{
+    position: fixed;
+    right: 10px;
+    top: 44%;
+    z-index: 3;
+    display: none;
+  }
+  .MenuList{
+    width:100%;
+    height:45%;
+    list-style:none;
+    margin-left: 50px;
+  }
+  .MenuImage{
+    width: 50%;
+  }
+  .MainImage{
+    width: 80vw;
+    height: auto;
+    scale: 1.1;
+  }
+  .Menu:hover{
+    border-bottom: none;
+  }
+  .Menu1:hover{
+    border-bottom: none;
+  }
+  .CarouselClass{
+    height: 60vh;
+    width: 100vw;
+  }
+  .Logotest{
+    width: 100px;
+    height: 100px;
+  }
+  .Writing{
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+  .AboutLinkContainer{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+  }
+}
+
+@media (min-width:465px) and (max-width:1080px){
+  .Logo{
+    height: 130px;
+    width: 170px;
+  }
+  .MenuWriting{
+    display: none;
+
+  }
+  .Menu1{
+    position:fixed;
+    right: 30px;
+    top: 30px;
+    display:flex;
+    justify-content: flex-end;
+  }
+  .MenuList{
+    width:100%;
+    height:45%;
+    list-style:none;
+    margin-left: 200px;
+  }
+  .MenuImage{
+    width: 40%;
+  }
+  .ArrowsContainer{
+    position: fixed;
+    right: 20px;
+    top: 47%;
+    display: none;
+  }
+  .Resources{
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    height: 300px;
+  }
+  .ResourcesItem{
+    width: 50px;
+    height: 50px;
+  }
+  .MainImage{
+    width: 80vw;
+    height: auto;
+    scale: 1.1;
+  }
+  .Menu:hover{
+    border-bottom: none;
+  }
+  .Menu1:hover{
+    border-bottom: none;
+  }
+}
