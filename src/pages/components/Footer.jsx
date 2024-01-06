@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import menuImage from '../../images/menuImage.svg'
-import logo from '../../images/logo2.png'
+
 function Footer({id,image}) {
 
     const navigate = useNavigate();

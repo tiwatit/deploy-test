@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-import menuImage from '../../images/menuImage.svg'
 import facebook from'../../images/facebook.png';
 import facebookBlack from'../../images/facebookBlack.png';
 import phone from'../../images/phone.png';
